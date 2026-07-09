@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Contact G & M Plumbing | Pflugerville & Austin, TX Plumber',
   description:
     'Contact G & M Plumbing, Inc. in Pflugerville and Austin, TX. Call 512-990-0505 to schedule a plumbing repair, water heater service, or hydrostatic pressure test.',
-  alternates: { canonical: 'https://gandmplumbingtx.com/contact-us' },
+  alternates: { canonical: '/contact-us' },
 }
 
 export default function ContactPage() {

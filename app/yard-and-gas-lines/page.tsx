@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Yard Line & Gas Line Repair in Pflugerville & Austin, TX',
   description:
     'G & M Plumbing repairs and installs yard lines and gas lines throughout Pflugerville and Austin, TX. Licensed, safe, code-compliant. Call 512-990-0505 to schedule.',
-  alternates: { canonical: 'https://gandmplumbingtx.com/yard-and-gas-lines' },
+  alternates: { canonical: '/yard-and-gas-lines' },
 }
 
 const structuredData = {

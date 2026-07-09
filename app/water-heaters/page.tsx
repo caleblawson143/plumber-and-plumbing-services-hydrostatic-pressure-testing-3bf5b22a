@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Water Heater Installation & Repair in Pflugerville & Austin, TX',
   description:
     'G & M Plumbing installs and repairs tank and tankless water heaters throughout Pflugerville and Austin, TX. Fast scheduling, fair pricing. Call 512-990-0505.',
-  alternates: { canonical: 'https://gandmplumbingtx.com/water-heaters' },
+  alternates: { canonical: '/water-heaters' },
 }
 
 const structuredData = {

@@ -34,11 +34,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'G & M Plumbing, Inc.' }],
   creator: 'G & M Plumbing, Inc.',
-  metadataBase: new URL('https://gandmplumbingtx.com'),
+  metadataBase: new URL(''),
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://gandmplumbingtx.com',
+    url: '',
     siteName: 'G & M Plumbing',
     title: 'G & M Plumbing | Plumber in Pflugerville & Austin, TX',
     description:
@@ -58,9 +58,9 @@ const structuredData = {
   '@graph': [
     {
       '@type': 'PlumbingService',
-      '@id': 'https://gandmplumbingtx.com/#organization',
+      '@id': '/#organization',
       name: 'G & M Plumbing, Inc.',
-      url: 'https://gandmplumbingtx.com',
+      url: '',
       telephone: '+15129900505',
       address: {
         '@type': 'PostalAddress',
@@ -88,10 +88,10 @@ const structuredData = {
     },
     {
       '@type': 'WebSite',
-      '@id': 'https://gandmplumbingtx.com/#website',
-      url: 'https://gandmplumbingtx.com',
+      '@id': '/#website',
+      url: '',
       name: 'G & M Plumbing',
-      publisher: { '@id': 'https://gandmplumbingtx.com/#organization' },
+      publisher: { '@id': '/#organization' },
     },
   ],
 }

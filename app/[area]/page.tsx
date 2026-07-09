@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: { params: Promise<{ area: str
   return {
     title: `Plumber in ${data.city}, ${data.state} | G & M Plumbing`,
     description: `${data.description} Call 512-990-0505 to schedule.`,
-    alternates: { canonical: `https://gandmplumbingtx.com/${area}` },
+    alternates: { canonical: `/${area}` },
   }
 }
 

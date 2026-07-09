@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Hydrostatic Pressure Tests | G & M Plumbing Pflugerville & Austin TX',
   description:
     'G & M Plumbing offers expert hydrostatic pressure testing in Pflugerville and Austin, TX. We locate hidden slab leaks and plumbing failures fast. Call 512-990-0505.',
-  alternates: { canonical: 'https://gandmplumbingtx.com/hydrostatic-pressure-tests' },
+  alternates: { canonical: '/hydrostatic-pressure-tests' },
 }
 
 const structuredData = {
