@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Nav from '../../components/nav'
-import Footer from '../../components/footer'
+import Nav from '@/components/nav'
+import Footer from '@/components/footer'
 import { notFound } from 'next/navigation'
 
 const areas: Record<string, { city: string; state: string; description: string }> = {
