@@ -34,11 +34,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'G & M Plumbing, Inc.' }],
   creator: 'G & M Plumbing, Inc.',
-  metadataBase: new URL(''),
+  metadataBase: new URL('https://example.com'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: '',
+    url: 'https://example.com',
     siteName: 'G & M Plumbing',
     title: 'G & M Plumbing | Plumber in Pflugerville & Austin, TX',
     description:
@@ -60,7 +60,7 @@ const structuredData = {
       '@type': 'PlumbingService',
       '@id': '/#organization',
       name: 'G & M Plumbing, Inc.',
-      url: '',
+      url: 'https://example.com',
       telephone: '+15129900505',
       address: {
         '@type': 'PostalAddress',
@@ -89,7 +89,7 @@ const structuredData = {
     {
       '@type': 'WebSite',
       '@id': '/#website',
-      url: '',
+      url: 'https://example.com',
       name: 'G & M Plumbing',
       publisher: { '@id': '/#organization' },
     },
