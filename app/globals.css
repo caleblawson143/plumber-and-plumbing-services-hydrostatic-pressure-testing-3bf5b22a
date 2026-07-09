@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: 'Inter', 'Inter Fallback', system-ui, sans-serif;
+  --font-heading: 'Barlow', 'Barlow Fallback', system-ui, sans-serif;
+
+  /* Brand palette — 5 colors total */
+  --color-brand:        #3b82f6;
+  --color-brand-dark:   #1d4ed8;
+  --color-brand-light:  #eff6ff;
+  --color-navy:         #0f172a;
+  --color-navy-mid:     #1e293b;
+
+  /* Neutrals */
+  --color-background:   #ffffff;
+  --color-surface:      #f8fafc;
+  --color-foreground:   #0f172a;
+  --color-muted:        #64748b;
+  --color-border:       #e2e8f0;
+
+  --radius: 0.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--color-navy);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+}
