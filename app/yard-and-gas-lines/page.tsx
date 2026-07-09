@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Nav from '@/components/nav'
-import Footer from '@/components/footer'
+import Nav from '../../components/nav'
+import Footer from '../../components/footer'
 
 export const metadata: Metadata = {
   title: 'Yard Line & Gas Line Repair in Pflugerville & Austin, TX',
