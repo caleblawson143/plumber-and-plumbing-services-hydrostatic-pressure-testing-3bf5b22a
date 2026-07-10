@@ -83,13 +83,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="bg-[#ffffff]">
-      <head>
+      <body className="font-sans antialiased">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
-      </head>
-      <body className="font-sans antialiased">
         {children}
       </body>
     </html>
