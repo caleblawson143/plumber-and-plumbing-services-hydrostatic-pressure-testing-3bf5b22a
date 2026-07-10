@@ -71,7 +71,7 @@ const structuredData = {
       '@id': '/#website',
       url: 'https://example.com',
       name: 'G & M Plumbing',
-      publisher: { '@id': '/#organization' },
+      publisher: { id: '/#organization' },
     },
   ],
 }
