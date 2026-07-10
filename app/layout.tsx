@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from 'next'
+import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -31,12 +31,6 @@ export const metadata: Metadata = {
       'Pflugerville and Austin TX\'s premier plumbing and hydrostatic pressure testing provider. Repairs, water heaters, yard & gas lines.',
   },
   robots: { index: true, follow: true },
-}
-
-export const viewport: Viewport = {
-  themeColor: '#3b82f6',
-  width: 'device-width',
-  initialScale: 1,
 }
 
 const structuredData = {

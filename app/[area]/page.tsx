@@ -43,8 +43,8 @@ const areas: Record<string, { city: string; state: string; description: string }
   },
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ area: string }> }): Promise<Metadata> {
-  const { area } = await params
+export async function generateMetadata({ params }: { params: { area: string } }): Promise<Metadata> {
+  const { area } = params
   const data = areas[area]
   if (!data) return {}
   return {
@@ -64,8 +64,8 @@ const services = [
   { title: 'Yard & Gas Lines', href: '/yard-and-gas-lines' },
 ]
 
-export default async function AreaPage({ params }: { params: Promise<{ area: string }> }) {
-  const { area } = await params
+export default async function AreaPage({ params }: { params: { area: string } }) {
+  const { area } = params
   const data = areas[area]
   if (!data) notFound()
 
