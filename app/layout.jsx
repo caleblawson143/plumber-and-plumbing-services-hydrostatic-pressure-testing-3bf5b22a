@@ -19,7 +19,7 @@ export const metadata = {
   ],
   authors: [{ name: 'G & M Plumbing, Inc.' }],
   creator: 'G & M Plumbing, Inc.',
-  metadataBase: new URL('https://example.com'),
+  metadataBase: 'https://example.com',
   openGraph: {
     type: 'website',
     locale: 'en_US',
