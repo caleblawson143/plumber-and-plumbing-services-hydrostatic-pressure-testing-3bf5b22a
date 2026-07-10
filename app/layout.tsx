@@ -1,19 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter, Barlow } from 'next/font/google'
 import './globals.css'
-
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-sans',
-})
-
-const barlow = Barlow({
-  subsets: ['latin'],
-  weight: ['400', '600', '700', '800'],
-  display: 'swap',
-  variable: '--font-heading',
-})
 
 export const metadata: Metadata = {
   title: {
@@ -109,7 +95,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </head>
-      <body className={`${inter.variable} ${barlow.variable} font-sans antialiased`}>
+      <body className="font-sans antialiased">
         {children}
       </body>
     </html>
