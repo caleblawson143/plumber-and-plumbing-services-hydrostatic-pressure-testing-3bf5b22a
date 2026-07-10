@@ -1,7 +1,7 @@
 FROM node:20-bullseye AS builder
 WORKDIR /app
 COPY package*.json ./
-RUN rm -f package-lock.json && npm install --include=optional --legacy-peer-deps --no-audit --no-fund
+RUN rm -f package-lock.json && npm install --include=dev --include=optional --legacy-peer-deps --no-audit --no-fund
 COPY . .
 RUN mkdir -p public
 RUN node -e "const fs=require('fs');const roots=['app','src/app'].filter((r)=>fs.existsSync(r));const layouts=roots.flatMap((r)=>['tsx','ts','jsx','js'].map((e)=>r+'/layout.'+e).filter((f)=>fs.existsSync(f)));for(const f of layouts){const s=fs.readFileSync(f,'utf8');if(!/import\s+['\"][^'\"]*\.css['\"]/.test(s)){console.error('\n[BUILD BLOCKED] '+f+' must import a CSS file.');console.error('Without it, Azure deploys the v0 app without Tailwind styles.\n');process.exit(1);}}const css=roots.map((r)=>r+'/globals.css').filter((f)=>fs.existsSync(f));if(css.length&&!css.some((f)=>/@import\s+['\"]tailwindcss['\"]|@tailwind\s+utilities/.test(fs.readFileSync(f,'utf8')))){console.error('\n[BUILD BLOCKED] app globals.css must include Tailwind.');console.error('Without it, utility classes are purged from the production CSS.\n');process.exit(1);}"
